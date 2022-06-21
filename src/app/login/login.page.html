@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>CADASTRAR GERENTE</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<br>
+
+<ion-content>
+  <form novalidate [formGroup]="registerForm" (ngSubmit)="submitForm()">
+    <ion-item>
+      <ion-label>Nome:</ion-label>
+      <ion-input formControlName="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>E-mail:</ion-label>
+      <ion-input formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Senha:</ion-label>
+      <ion-input formControlName="senha" type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Telefone:</ion-label>
+      <ion-input formControlName="telefone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Loja:</ion-label>
+      <ion-input formControlName="loja"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>CNPJ:</ion-label>
+      <ion-input formControlName="cnpj"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Endereço:</ion-label>
+      <ion-input formControlName="endereco"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Localização:</ion-label>
+      <ion-input formControlName="localizacao"></ion-input>
+    </ion-item>
+
+    <br>
+    <br>
+   <center><ion-button type="submit "color="success">CADASTRAR</ion-button></center>
+
+
+  </form>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+  

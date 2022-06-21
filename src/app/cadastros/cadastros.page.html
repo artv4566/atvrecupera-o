@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>NOVA PEÇA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<br>
+<ion-content [fullscreen]="true"> 
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" method="post" action="">
+    
+        
+       
+            
+             
+
+                <ion-item>
+                  <ion-label >Código:</ion-label>
+                  <ion-input type="number"  id="cod"  name="cod" value="" ngModel required></ion-input>
+                </ion-item>
+                  
+              <ion-item>
+                <ion-label>Descrição:</ion-label>
+                <ion-input type="text" id="descricao" name="descricao"  value="" ngModel required></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Tipo:</ion-label>
+                <ion-input type="text" id="tipo"  name="tipo" value="" ngModel required></ion-input>
+              </ion-item>
+                
+              <ion-item>
+                <ion-label >Preço:</ion-label>
+                <ion-input type="number"  id="preco"  name="preco" value="" ngModel required></ion-input>
+              </ion-item>
+                
+              <ion-item>
+                <ion-label>Loja:</ion-label>
+                <ion-input type="text"  id="nome"  name="nome" value="" ngModel required></ion-input>
+              </ion-item>
+                
+              <ion-item>
+                <ion-label>Quantidade:</ion-label>
+                <ion-input type="number" id="qtde"  name="qtde" value="" ngModel required></ion-input>
+              </ion-item>
+                
+              <br><br>
+              <section>
+                <center><ion-button type="submit" color="success">CONFIRMAR</ion-button></center>
+                <br>
+                <center><ion-button type="reset" color="danger">CANCELAR</ion-button></center>
+              </section>
+    
+    
+      
+    </form>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header  [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>ESTOQUE</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon name="filter" (click)="goToFilters()"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+    <div  *ngFor="let produto of produtos">
+    <ion-item>
+
+      <ion-label>
+        <b>
+        <h2>Código: {{ produto.cod }}</h2>
+        <h2>Descrição: {{ produto.descricao }}</h2>
+        <h2>Tipo: {{ produto.tipo}}</h2>
+        <h2>Preço: {{ produto.preco}}</h2>
+        <h2>Quantidade Disponível: {{ produto.qtde}}</h2>
+        <h2>Loja: {{ produto.nome}}</h2>
+        </b>
+      </ion-label>
+    </ion-item>
+    </div>
+</ion-content>
+
